@@ -1,0 +1,73 @@
+Arguments: 
+  /usr/local/bin/node /Users/joyversierra/.node/corepack/yarn/1.22.19/bin/yarn.js add -D @storybook/testing-library @storybook/jest @storybook/addon-interactions @storybook/test-runner
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.17.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/is-string/-/is-string-1.0.7.tgz: Request failed "503 Service Unavailable"
+      at ResponseError.ExtendableBuiltin (/Users/joyversierra/.node/corepack/yarn/1.22.19/lib/cli.js:696:66)
+      at new ResponseError (/Users/joyversierra/.node/corepack/yarn/1.22.19/lib/cli.js:802:124)
+      at Request.<anonymous> (/Users/joyversierra/.node/corepack/yarn/1.22.19/lib/cli.js:66215:16)
+      at Request.emit (node:events:513:28)
+      at Request.module.exports.Request.onRequestResponse (/Users/joyversierra/.node/corepack/yarn/1.22.19/lib/cli.js:141767:10)
+      at ClientRequest.emit (node:events:513:28)
+      at HTTPParser.parserOnIncomingClient (node:_http_client:674:27)
+      at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17)
+      at HTTPParser.execute (<anonymous>)
+      at TLSSocket.socketOnData (node:_http_client:521:22)
+
+npm manifest: 
+  {
+    "name": "monnto-storybook",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint",
+      "storybook": "start-storybook -p 6006",
+      "build-storybook": "build-storybook"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@heroicons/react": "^1.0.6",
+      "next": "^12.2.5",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.18.10",
+      "@mdx-js/react": "^2.1.3",
+      "@storybook/addon-actions": "^6.5.9",
+      "@storybook/addon-essentials": "^6.5.10",
+      "@storybook/addon-interactions": "^6.5.10",
+      "@storybook/addon-links": "^6.5.10",
+      "@storybook/builder-webpack5": "^6.5.10",
+      "@storybook/jest": "^0.0.10",
+      "@storybook/manager-webpack5": "^6.5.10",
+      "@storybook/react": "^6.5.10",
+      "@storybook/testing-library": "^0.0.13",
+      "babel-loader": "^8.2.5"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
